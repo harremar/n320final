@@ -45,7 +45,7 @@ const Comment = ({
     <CardContent className="commentHolder">
       <div key={comment.id} className="comment">
         <div className="comment-image-container">
-          <img src="./images/red.webp" />
+          <img src="./images/red.webp" alt="" />
         </div>
         <div className="comment-right-part">
           <div className="comment-content">

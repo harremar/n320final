@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import InventoryItem from "./gallery";
-import { List, Modal, Grid, CardMedia, Button } from "@mui/material";
+import { List, Modal, Grid, Button } from "@mui/material";
 import "./inventory.css";
 import { Container } from "@mui/system";
 
@@ -37,6 +37,7 @@ export default function Inventory() {
     />
   ));
   let i = 0;
+  console.log(i);
 
   return (
     <div>
@@ -52,7 +53,6 @@ export default function Inventory() {
             <div className="charImages">
               {selectedItem.details &&
                 selectedItem.details.map((detail) => {
-                  // console.log(i);
                   i++;
                   return (
                     <div key={selectedItem.id}>
@@ -68,6 +68,7 @@ export default function Inventory() {
                         <img
                           className="modalImage"
                           src={detail.charImage}
+                          alt=""
                         ></img>
                       </Container>
                       <Button
@@ -108,7 +109,7 @@ export default function Inventory() {
             <span className="bold">Moves: </span>
             {characterMoves}
           </p>
-          <img className="modalImage2" src={characterImg}></img>
+          <img className="modalImage2" src={characterImg} alt=""></img>
 
           <Button
             variant="contained"
