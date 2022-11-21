@@ -1,0 +1,67 @@
+#infoBox {
+    width: 800px;
+    min-height: 90vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 6px;
+    /* border: #9c27b0 5px solid; */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+    cursor: none;
+  }
+  
+  .item:hover {
+    color: #ff0066;
+  }
+  
+  .itemSpace {
+    width: 250px;
+    padding-bottom: 12px;
+  }
+
+ 
+  .charImages{
+    height: 180px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+  }
+
+  .modalImage{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    border: none;
+  }
+  .modalImage2{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    border: none;
+    margin: 0 auto;
+  }
+
+
+  .centerPlease{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  .bold{
+    font-weight: bolder;
+  }
+
+  .details_button{
+    margin-top: -20px;
+  }

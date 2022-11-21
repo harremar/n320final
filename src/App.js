@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+// import Items from "./items";
+import Inventory from "./bagLab/inventory";
+import { CustomCursor } from "./CustomCursor/cursor";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import { slide as Menu } from "react-burger-menu";
+
+// import {
+//   Typography,
+//   AppBar,
+//   Card,
+//   CardActions,
+//   CardContent,
+//   CardMedia,
+//   CssBaseline,
+//   Grid,
+//   Toolbar,
+//   Container,
+//   Button,
+// } from "@mui/material";
+import HeaderPage from "./header/header";
+import FooterPage from "./bagLab/footer";
+import Comments from "./comments/Comments";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <CustomCursor />
+        <HeaderPage />
+
+        <Inventory />
+
+        <Comments currentUserId="1" />
+        <br />
+        <FooterPage />
+      </div>
+    );
+  }
 }
 
 export default App;

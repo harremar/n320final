@@ -1,0 +1,46 @@
+
+// {
+//   "id": 0,
+//   "name": "Anastashia",
+//   "desc": "stuff animal plush toy",
+//   "size": "10 inch",
+//   "image": "images/squish1.webp"
+// },
+// {
+//   "id": 1,
+//   "name": "Stuffy",
+//   "desc": "stuff animal plush toy",
+//   "size": "10 inch",
+//   "image": "images/squish1.webp"
+// },
+// {
+//   "id": 2,
+//   "name": "Banana",
+//   "desc": "stuff animal plush toy",
+//   "size": "10 inch",
+//   "image": "images/squish1.webp"
+// },
+// {
+//   "id": 3,
+//   "name": "Sam",
+//   "desc": "stuff animal plush toy",
+//   "size": "10 inch",
+//   "image": "images/squish1.webp"
+// },
+
+
+{
+    "id": 1,
+    "name": "Agumon",
+    "desc": "stuff animal plush toy",
+    "size": "10 inch",
+    "image": "images/agumon.jpg"
+  }
+
+{
+    "id": 5,
+    "name": "Gabumon",
+    "desc": "stuff animal plush toy",
+    "size": "10 inch",
+    "image": "images/gabumon.jpg"
+  }

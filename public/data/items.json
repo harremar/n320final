@@ -1,0 +1,348 @@
+[
+  {
+    "id": 0,
+    "name": "Agumon",
+    "desc": "Agumon is a Reptile Digimon. It has an appearance like a tiny dinosaur",
+    "image": "images/agumon/agumon.png",
+    "details": [
+      {
+        "idChar": "01",
+        "charName": "Agumon",
+        "level": "Rookie",
+        "charImage": "images/agumon/agumonLvl1.webp",
+        "moves": ["Pepper Breath", "Heavy Strike I", "Attack Charge"]
+      },
+      {
+        "idChar": "02",
+        "charName": "Greymon",
+        "level": "Champion",
+        "charImage": "images/agumon/greymonLvl2.webp",
+        "moves": ["Nova Blast", "Great Horns Attack", "Fire Wall"]
+      },
+      {
+        "idChar": "03",
+        "charName": "Metalgreymon",
+        "level": "Ultimate",
+        "charImage": "images/agumon/metalgreymonLvl3.jpg",
+        "moves": ["Mega Claw", "Giga Blast", "Metal Arm"]
+      },
+      {
+        "idChar": "04",
+        "charName": "Wargreymon",
+        "level": "Mega",
+        "charImage": "images/agumon/wargreymonLvl4.webp",
+        "moves": ["Dragon Killer", "Great Tornado", "Brave Sheild"]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Gabumon",
+    "desc": "Despite being covered in fur, Gabumon is a Reptile Digimon",
+    "image": "images/gabumon/gabumon.jpg",
+    "details": [
+      {
+        "idChar": "05",
+        "charName": "Gabumon",
+        "level": "Rookie",
+        "charImage": "images/gabumon/gabumonLvl1.jpg",
+        "moves": ["Blue Blaster", "Little Horn", "Horn Attack"]
+      },
+      {
+        "idChar": "06",
+        "charName": "Garurmon",
+        "level": "Champion",
+        "charImage": "images/gabumon/garurmonLvl2.webp",
+        "moves": ["Howling Blaster", "Body Blow", "Ice Cannon"]
+      },
+      {
+        "idChar": "07",
+        "charName": "Weregarurumon",
+        "level": "Ultimate",
+        "charImage": "images/gabumon/weregarurumon.jpg",
+        "moves": ["Wolf Claw", "Garuru Kick", "Blow Hard", "Fox Fire"]
+      },
+      {
+        "idChar": "08",
+        "charName": "Metalgarurmon",
+        "level": "Mega",
+        "charImage": "images/gabumon/metalgarurumon.jpg",
+        "moves": [
+          "Metal Wolf Claw",
+          "Grace Cross Freezer",
+          "Metal Howling",
+          "Blizzard Bash"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Patamon",
+    "desc": "Patamon is a Mammal Digimon. It uses its large ears to fly",
+    "image": "images/patamon/patamon.png",
+    "details": [
+      {
+        "idChar": "09",
+        "charName": "Patamon",
+        "level": "Rookie",
+        "charImage": "images/patamon/patamonLvl1.jpg",
+        "moves": ["Boom Bubble", "Breeze Blast", "Pretty Attack"]
+      },
+      {
+        "idChar": "10",
+        "charName": "Angemon",
+        "level": "Champion",
+        "charImage": "images/patamon/angemonLvl2.jpg",
+        "moves": ["Hand of Fate", "Angel Rod", "Omni Typhoon", "Air Slam"]
+      },
+      {
+        "idChar": "11",
+        "charName": "MagnaAngemon",
+        "level": "Ultimate",
+        "charImage": "images/patamon/holyangemonLvl3.png",
+        "moves": [
+          "Gate of Destiny",
+          "Excalibur",
+          "Manga Antidote",
+          "Soul Vanisher"
+        ]
+      },
+      {
+        "idChar": "12",
+        "charName": "Seraphimon",
+        "level": "Mega",
+        "charImage": "images/patamon/seraphimonLvl4.jpg",
+        "moves": [
+          "Strike of Seven Stars",
+          "Testament",
+          "Hallowed Knuckle",
+          "Rising Halo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tailmon",
+    "desc": "Tailmon is an Animal Digimon. It is very curious and loves pranks.",
+    "image": "images/tailmon/tailmon.jpg",
+    "details": [
+      {
+        "idChar": "13",
+        "charName": "Tailmon",
+        "level": "Champion",
+        "charImage": "images/tailmon/tailmonLvl1.png",
+        "moves": [
+          "Lightning Paw",
+          "Cat's eye Hypnotism",
+          "Lightning Kick",
+          "Cat Tail"
+        ]
+      },
+      {
+        "idChar": "14",
+        "charName": "Nefertimon",
+        "level": "Armor",
+        "charImage": "images/tailmon/nefertimon.jpg",
+        "moves": ["Queen's Paw", "Rosetta Stone", "Hot Foot", "Cat's Eye Beam"]
+      },
+      {
+        "idChar": "15",
+        "charName": "Magnadramon",
+        "level": "Mega",
+        "charImage": "images/tailmon/magnadramon.jpg",
+        "moves": ["Fire Tornado", "Dragon Fire", "Hermit Fog"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Palmon",
+    "desc": "Palmon is a Vegetation Digimon. It has a tropical flower blooming on its head.",
+    "image": "images/palmon/palmon.jpg",
+    "details": [
+      {
+        "idChar": "16",
+        "charName": "Palmon",
+        "level": "Rookie",
+        "charImage": "images/palmon/palmonLvl1.jpg",
+        "moves": ["Poison Ivy", "Plant Shock", "Rooter Breaker", "Thorn Thurst"]
+      },
+      {
+        "idChar": "17",
+        "charName": "Togemon",
+        "level": "Champion",
+        "charImage": "images/palmon/togemon.webp",
+        "moves": ["Needle Spray", "Coconut Punch", "Lightspeed Jabbing"]
+      },
+      {
+        "idChar": "18",
+        "charName": "Lillymon",
+        "level": "Ultimate",
+        "charImage": "images/palmon/lillymon.webp",
+        "moves": [
+          "Flower Cannon",
+          "Flower Wreath",
+          "Temptation",
+          "Vicious Vine"
+        ]
+      },
+      {
+        "idChar": "19",
+        "charName": "Rosemon",
+        "level": "Mega",
+        "charImage": "images/palmon/rosemon.webp",
+        "moves": ["Thrown Whipping", "Rose Spear", "Ivy Hug", "Thorn Shoot"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Biyomon",
+    "desc": "Biyomon is a Bird Digimon with arm-like wings and can grib objects.",
+    "image": "images/biyomon/biyomon.jpg",
+    "details": [
+      {
+        "idChar": "20",
+        "charName": "Biyomon",
+        "level": "Rookie",
+        "charImage": "images/biyomon/biyomonLvl1.webp",
+        "moves": [
+          "Hard Beak",
+          "Spiral Twister",
+          "Violin Attack",
+          "Turbo Peaker"
+        ]
+      },
+      {
+        "idChar": "21",
+        "charName": "Birdramon",
+        "level": "Champion",
+        "charImage": "images/biyomon/birdramon.png",
+        "moves": ["Meteor Wing", "Fire Flap", "Storm", "Fireball", "Bir-Flame"]
+      },
+      {
+        "idChar": "22",
+        "charName": "Garudamon",
+        "level": "Ultimate",
+        "charImage": "images/biyomon/garudamon.png",
+        "moves": ["Wing Blade", "Eagle Claw", "Phoenix Claw", "Fire Hurricane"]
+      },
+      {
+        "idChar": "23",
+        "charName": "Hououmon",
+        "level": "Mega",
+        "charImage": "images/biyomon/hououmon.webp",
+        "moves": [
+          "Starlight Explosion",
+          "Crimson Fire",
+          "Life Force",
+          "Flaming Wing"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Tentomon",
+    "desc": "Insectoid Digimon, Tentomon has a hard carapace but low aggression.",
+    "image": "images/tentomon/tentomon.jpg",
+    "details": [
+      {
+        "idChar": "24",
+        "charName": "Tentomon",
+        "level": "Rookie",
+        "charImage": "images/tentomon/tentomonLvl1.jpg",
+        "moves": ["Super Shocker", "Talon Attack", "Double Punch"]
+      },
+      {
+        "idChar": "25",
+        "charName": "Kabuterimon",
+        "level": "Champion",
+        "charImage": "images/tentomon/kabuterimon.webp",
+        "moves": [
+          "Electro Shocker",
+          "Big Horn",
+          "Quick Thrust",
+          "Shocking Touch"
+        ]
+      },
+      {
+        "idChar": "26",
+        "charName": "Megakabuterimon",
+        "level": "Ultimate",
+        "charImage": "images/tentomon/megakabuterimon.webp",
+        "moves": [
+          "Horn Buster",
+          "Wild Scratcher",
+          "Ground Circuit",
+          "Rhino Charge"
+        ]
+      },
+      {
+        "idChar": "27",
+        "charName": "Herculeskabuterimon",
+        "level": "Mega",
+        "charImage": "images/tentomon/herculeskabuterimon.webp",
+        "moves": [
+          "Mega Electro Shocker",
+          "Giga Scissor Claw",
+          "High Mega Blaster",
+          "Horn Buster II"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Gomamon",
+    "desc": "Gomamon is Sea Animal Digimon. It is able to move on land and ocean.",
+    "image": "images/gomamon/gomamon.jpg",
+    "details": [
+      {
+        "idChar": "28",
+        "charName": "Gomamon",
+        "level": "Rookie",
+        "charImage": "images/gomamon/gomamonLvl1.jpg",
+        "moves": ["Fish Power", "Claw Attack", "Sharp Sider", "Big Wave Attack"]
+      },
+      {
+        "idChar": "29",
+        "charName": "Ikkakumon",
+        "level": "Champion",
+        "charImage": "images/gomamon/ikkakumon.png",
+        "moves": [
+          "Harpoon Torpedo",
+          "Heat Top",
+          "Northern Light",
+          "Horn Attack"
+        ]
+      },
+      {
+        "idChar": "30",
+        "charName": "Zudomon",
+        "level": "Ultimate",
+        "charImage": "images/gomamon/zudomon.webp",
+        "moves": [
+          "Vulcan's Hammer",
+          "Horn & Tusk",
+          "Glacial Spear",
+          "Cold Crusher"
+        ]
+      },
+      {
+        "idChar": "31",
+        "charName": "Vikemon",
+        "level": "Mega",
+        "charImage": "images/gomamon/vikemon.webp",
+        "moves": [
+          "Artic Blizzard",
+          "Viking Flare",
+          "Bazooka Howl",
+          "Mjollnir Hammer"
+        ]
+      }
+    ]
+  }
+]
