@@ -15,6 +15,7 @@ import "./comments.css";
 
 //creating the function for comments
 const Comments = ({ commentsUrl, currentUserId }) => {
+  console.log(commentsUrl);
   const [backendComments, setBackendComments] = useState([]);
   const [activeComment, setActiveComment] = useState(null);
   const rootComments = backendComments.filter(

@@ -13,8 +13,8 @@ export default function Inventory() {
   const [characterImg, setCharacterImg] = useState("images/white.png");
   const [characterLevel, setCharacterLevel] = useState("");
   const [characterMoves, setCharacterMoves] = useState("");
-  const [buttonColorStyle, setButtonColorStyle] = useState("secondary");
-  const [charBGcolor, setcharBGcolor] = useState("#dab7da");
+  // const [buttonColorStyle, setButtonColorStyle] = useState("secondary");
+  // const [charBGcolor, setcharBGcolor] = useState("#dab7da");
 
   //on component mount... load data
   useEffect(() => {
@@ -72,7 +72,7 @@ export default function Inventory() {
                       </Container>
                       <Button
                         variant="contained"
-                        color={buttonColorStyle}
+                        color="secondary"
                         className="details_button"
                         sx={{
                           color: "white",

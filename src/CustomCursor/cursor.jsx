@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./cursor.css";
 // import CustomCursorContext from "./context/CustomCursorContext";
 
@@ -80,5 +80,3 @@ export const CustomCursor = () => {
     </div>
   )
 };
-
-// export default CustomCursor;

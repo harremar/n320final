@@ -2,19 +2,7 @@ import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import "./header.css";
 
-import {
-  Typography,
-  AppBar,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  CssBaseline,
-  Grid,
-  Toolbar,
-  Container,
-  Button,
-} from "@mui/material";
+import { Typography, AppBar, Toolbar } from "@mui/material";
 
 const HeaderPage = () => {
   return (

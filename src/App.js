@@ -1,24 +1,8 @@
 import "./App.css";
-import React, { useState } from "react";
+import React from "react";
 // import Items from "./items";
 import Inventory from "./bagLab/inventory";
 import { CustomCursor } from "./CustomCursor/cursor";
-
-// import { slide as Menu } from "react-burger-menu";
-
-// import {
-//   Typography,
-//   AppBar,
-//   Card,
-//   CardActions,
-//   CardContent,
-//   CardMedia,
-//   CssBaseline,
-//   Grid,
-//   Toolbar,
-//   Container,
-//   Button,
-// } from "@mui/material";
 import HeaderPage from "./header/header";
 import FooterPage from "./bagLab/footer";
 import Comments from "./comments/Comments";

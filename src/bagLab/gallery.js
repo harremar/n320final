@@ -4,9 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import "./card.css";
-import { RecordVoiceOver } from "@mui/icons-material";
-
-// import CardMedia from "@mui/material/CardMedia";
 
 export default function InventoryItem(props) {
   const [cardColor, setCardColor] = useState("#fafafa");

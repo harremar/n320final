@@ -1,16 +1,7 @@
 import { useState } from "react";
 //importing styling
 import "./comments.css";
-import {
-  Divider,
-  Avatar,
-  Grid,
-  Paper,
-  Button,
-  Input,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Input } from "@mui/material";
 
 //function creating commentForm and what a commentForm consisted of
 const CommentForm = ({
