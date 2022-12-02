@@ -15,7 +15,7 @@ import "./comments.css";
 
 //creating the function for comments
 const Comments = ({ commentsUrl, currentUserId }) => {
-  console.log(commentsUrl);
+  // creating constants
   const [backendComments, setBackendComments] = useState([]);
   const [activeComment, setActiveComment] = useState(null);
   const rootComments = backendComments.filter(
@@ -81,6 +81,7 @@ const Comments = ({ commentsUrl, currentUserId }) => {
     });
   }, []);
 
+  //returning the commentform
   return (
     <div className="comments">
       <h3 className="comments-title">Comments</h3>

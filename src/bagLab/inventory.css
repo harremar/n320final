@@ -1,7 +1,8 @@
+/* inventory styling */
 #infoBox {
     width: 800px;
-    min-height: 90vh;
-    margin: 0 auto;
+    min-height: 75vh;
+    margin: 100px auto;
     background-color: white;
     border-radius: 6px;
     /* border: #9c27b0 5px solid; */
@@ -17,6 +18,8 @@
   .itemSpace {
     width: 250px;
     padding-bottom: 12px;
+  
+        
   }
 
  
@@ -60,8 +63,22 @@
 
   .bold{
     font-weight: bolder;
+    font-size: 14px;
   }
 
   .details_button{
     margin-top: -20px;
   }
+
+  .mainDigContainer{
+    /* background-color: #ff0066; */
+    margin: 0 auto;
+  }
+
+  .paddingTop{
+    padding-top: 1px;
+}
+
+p {
+  color: black;
+}

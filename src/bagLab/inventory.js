@@ -1,59 +1,59 @@
 import React, { useState, useEffect } from "react";
 import InventoryItem from "./gallery";
 import { List, Modal, Grid, Button } from "@mui/material";
-import "./inventory.css";
+import "./inventory.css"; //importing styles
 import { Container } from "@mui/system";
+import ColorAnimation from "../hero/slideshow"; //color changer
 
+//creating inventory function
 export default function Inventory() {
-  const [items, setItems] = useState([]);
-  const [selectedItem, selectItem] = useState({});
-  const [showModal, setModalOpen] = useState(false);
-  const [bagItems, setBagItems] = useState([]);
-  const [characterName, setCharacterName] = useState("See Stats");
-  const [characterImg, setCharacterImg] = useState("images/white.png");
-  const [characterLevel, setCharacterLevel] = useState("");
-  const [characterMoves, setCharacterMoves] = useState("");
-  // const [buttonColorStyle, setButtonColorStyle] = useState("secondary");
-  // const [charBGcolor, setcharBGcolor] = useState("#dab7da");
+  //creating constants
+  const [items, setItems] = useState([]); //items
+  const [selectedItem, selectItem] = useState({}); //selectedItem
+  const [showModal, setModalOpen] = useState(false); //Modal
+  const [characterName, setCharacterName] = useState("See Stats"); //names
+  const [characterImg, setCharacterImg] = useState("images/white.png"); //image
+  const [characterLevel, setCharacterLevel] = useState(""); //level
+  const [characterMoves, setCharacterMoves] = useState(""); //moves
 
   //on component mount... load data
+  //GETTING DATA
   useEffect(() => {
     fetch("data/items.json")
       .then((result) => result.json())
       .then((data) => {
-        // console.log(data);
         //STORE DATA
         setItems(data);
       });
   }, []);
 
-  //create out inventory list
+  //create out inventory list (characters)
   const itemsList = items.map((item) => (
-    <InventoryItem
-      key={item.id}
-      item={item}
-      addItem={addItem}
-      showInfo={showInfo}
-    />
+    <InventoryItem key={item.id} item={item} showInfo={showInfo} />
   ));
   let i = 0;
   console.log(i);
 
+  //returning grid and modal
   return (
     <div>
+      {/* the modal */}
       <Modal
         open={showModal}
         onClose={() => {
           setModalOpen(false);
         }}
       >
+        {/* info box in modal */}
         <div id="infoBox">
-          <div>
-            <h1>{selectedItem.name}</h1>
+          <div className="paddingTop">
+            <h1>{selectedItem.name} Evolution</h1>
+            <ColorAnimation />
             <div className="charImages">
               {selectedItem.details &&
                 selectedItem.details.map((detail) => {
                   i++;
+                  // returning characters and detail buttons for each
                   return (
                     <div key={selectedItem.id}>
                       <Container
@@ -65,12 +65,14 @@ export default function Inventory() {
                           cursor: "none",
                         }}
                       >
+                        {/* image */}
                         <img
                           className="modalImage"
                           src={detail.charImage}
                           alt=""
                         ></img>
                       </Container>
+                      {/* button */}
                       <Button
                         variant="contained"
                         color="secondary"
@@ -84,6 +86,7 @@ export default function Inventory() {
                           cursor: "none",
                           marginTop: "-50px",
                         }}
+                        // changing the constants
                         onClick={() => {
                           setCharacterImg(detail.charImage);
                           setCharacterName(detail.charName);
@@ -100,17 +103,19 @@ export default function Inventory() {
                 })}
             </div>
           </div>
+
           <h2>{characterName}</h2>
-          <p>
+          <h6>
             <span className="bold">Level: </span>
             {characterLevel}
-          </p>
-          <p>
+          </h6>
+          <h6>
             <span className="bold">Moves: </span>
             {characterMoves}
-          </p>
+          </h6>
           <img className="modalImage2" src={characterImg} alt=""></img>
 
+          {/*  Closing modal button  */}
           <Button
             variant="contained"
             color="secondary"
@@ -137,35 +142,21 @@ export default function Inventory() {
           </Button>
         </div>
       </Modal>
+      {/* grid of characters */}
       <Grid container>
-        <Grid className="hello">
-          <h2>Digimon</h2>
+        <Grid className="mainDigContainer">
+          <h2>Featured Characters</h2>
           <List> {itemsList} </List>
         </Grid>
       </Grid>
     </div>
   );
 
+  //show info function
   function showInfo(itemId) {
     //select the item to be shown -> puts its information into a variable
     selectItem(items[itemId]);
     //show the info
     setModalOpen(true);
   }
-
-  function addItem(itemId) {
-    setBagItems([...bagItems, items[itemId]]);
-    console.log(bagItems);
-  }
 }
-
-// function gettingMoves(moves) {
-//   // console.log(moves);
-//   let spring = "";
-//   console.log(moves.length);
-//   for (let i = 0; i < moves.length; i++) {
-//     console.log(moves[i]);
-//     spring = spring += `<li> ` + moves[i] + `</li>`;
-//     console.log(spring);
-//   }
-// }

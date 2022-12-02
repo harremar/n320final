@@ -43,7 +43,7 @@
 
 
 ::-webkit-scrollbar{
-  width: 22px;
+  width: 18px;
 }
 
 ::-webkit-scrollbar-track{
@@ -51,10 +51,11 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-image: linear-gradient(purple, white);
-  border: 25px;
+  background-image: linear-gradient(purple, purple);
+  border: 5px;
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background-image: linear-gradient(rgb(101, 7, 101), rgb(215, 216, 216));
+  background-image: linear-gradient(rgb(101, 7, 101), rgb(115, 16, 100));
 }

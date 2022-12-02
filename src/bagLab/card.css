@@ -1,29 +1,32 @@
-.something{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 285px;
-    height: 340px;
-}
-
+/* card styling */
 .container {
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin: 5px auto;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: aqua; */
     /* height: 500px; */
+    /* background-color: rosybrown; */
+    
 }
 ul{
-    display: flex;
     flex-wrap: wrap;
     /* background-color: red; */
+    width: 1400px;
     margin: 0 auto;
-    max-width: 1250px;
-    /* display: flex; */
+    padding-left: 200px;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    /* background-color: blue; */
     
 }
 

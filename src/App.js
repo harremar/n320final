@@ -6,6 +6,9 @@ import { CustomCursor } from "./CustomCursor/cursor";
 import HeaderPage from "./header/header";
 import FooterPage from "./bagLab/footer";
 import Comments from "./comments/Comments";
+import HeroSection from "./hero/hero";
+import ColorAnimation from "./hero/slideshow";
+import BoopButton from "./sound/playSound";
 
 class App extends React.Component {
   render() {
@@ -13,7 +16,9 @@ class App extends React.Component {
       <div className="App">
         <CustomCursor />
         <HeaderPage />
-
+        <ColorAnimation />
+        <HeroSection />
+        <ColorAnimation />
         <Inventory />
 
         <Comments currentUserId="1" />

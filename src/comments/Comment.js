@@ -3,8 +3,7 @@
 
 import { CardContent } from "@mui/material";
 import CommentForm from "./CommentForm";
-//importing the styling
-import "./comments.css";
+import "./comments.css"; //importing the styling
 
 //what a comment consisted of
 const Comment = ({
@@ -41,17 +40,23 @@ const Comment = ({
   const replyId = parentId ? parentId : comment.id;
   // creating a date posted for comment
   const createdAt = new Date(comment.createdAt).toLocaleDateString();
+
+  //returning cardcontent
   return (
     <CardContent className="commentHolder">
       <div key={comment.id} className="comment">
+        {/* user image */}
         <div className="comment-image-container">
           <img src="./images/red.webp" alt="" />
         </div>
         <div className="comment-right-part">
           <div className="comment-content">
+            {/* user's name */}
             <div className="comment-author">{comment.username}</div>
+            {/* time created */}
             <div>{createdAt}</div>
           </div>
+          {/* getting the comment form if editing */}
           {!isEditing && <div className="comment-text">{comment.body}</div>}
           {isEditing && (
             <CommentForm
@@ -64,6 +69,7 @@ const Comment = ({
               }}
             />
           )}
+          {/* reply */}
           <div className="comment-actions">
             {canReply && (
               <div
@@ -75,6 +81,7 @@ const Comment = ({
                 Reply
               </div>
             )}
+            {/* edit */}
             {canEdit && (
               <div
                 className="comment-action"
@@ -85,6 +92,7 @@ const Comment = ({
                 Edit
               </div>
             )}
+            {/* delete */}
             {canDelete && (
               <div
                 className="comment-action"
@@ -94,12 +102,14 @@ const Comment = ({
               </div>
             )}
           </div>
+          {/* reply commentform */}
           {isReplying && (
             <CommentForm
               submitLabel="Reply"
               handleSubmit={(text) => addComment(text, replyId)}
             />
           )}
+          {/* replies to a comment */}
           {replies.length > 0 && (
             <div className="replies">
               {replies.map((reply) => (

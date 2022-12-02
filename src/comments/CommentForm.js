@@ -1,6 +1,5 @@
 import { useState } from "react";
-//importing styling
-import "./comments.css";
+import "./comments.css"; //importing styling
 import { Input } from "@mui/material";
 
 //function creating commentForm and what a commentForm consisted of
@@ -21,8 +20,10 @@ const CommentForm = ({
     handleSubmit(text);
     setText("");
   };
+  //returning the input form
   return (
     <form onSubmit={onSubmit}>
+      {/* the input */}
       <Input
         className="comment-form-textarea"
         placeholder="enter text here..."
@@ -31,9 +32,11 @@ const CommentForm = ({
         onChange={(e) => setText(e.target.value)}
       />
       <br />
+      {/* submit button */}
       <button className="comment-form-button" disabled={isTextareaDisabled}>
         {submitLabel}
       </button>
+      {/* cancel button */}
       {hasCancelButton && (
         <button
           type="button"

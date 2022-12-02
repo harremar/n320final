@@ -1,11 +1,13 @@
+//follow a long video on youtube
+//https://www.youtube.com/watch?v=nvhNp2A3hxI
 import React from "react";
-import "./cursor.css";
-// import CustomCursorContext from "./context/CustomCursorContext";
+import "./cursor.css"; //importing the styles
 
+//creating the custom cursor function
 export const CustomCursor = () => {
-//   const { type } = useContext(CustomCursorContext);
-  const secondaryCursor = React.useRef(null)
-  const mainCursor = React.useRef(null)
+  const secondaryCursor = React.useRef(null) //second circle
+  const mainCursor = React.useRef(null) //first circle
+  //position of the mouse
   const positionRef = React.useRef({
     mouseX: 0,
     mouseY: 0,
@@ -16,10 +18,11 @@ export const CustomCursor = () => {
     key: -1,
   })
 
+  //when the mouse moves (changes positions)
   React.useEffect(() => {
     document.addEventListener("mousemove", (event) => {
       const { clientX, clientY } = event;
-
+      //changing the X and Ys of the mouse position
       const mouseX = clientX;
       const mouseY = clientY;
 
@@ -35,6 +38,7 @@ export const CustomCursor = () => {
     return () => {}
   }, []);
 
+  //getting the circles to follow the mouse
   React.useEffect(() => {
     const followMouse = () => {
       positionRef.current.key = requestAnimationFrame(followMouse);
@@ -68,6 +72,8 @@ export const CustomCursor = () => {
     };
     followMouse();
   }, []);
+
+  //returning the mouse to screen
   return (
     <div>
       <div className="main-cursor " ref={mainCursor}>

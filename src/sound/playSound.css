@@ -1,0 +1,23 @@
+/* We are styling the audio button here */
+p{
+    color: white;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #bd88cc;
+  }
+
+  audio::-webkit-media-controls-mute-button {
+    background-color: #d6b1e0;
+    border-radius: 50%;
+    /* color: white; */
+  }
+
+  audio::-webkit-media-controls-play-button {
+    background-color: #d6b1e0;
+    border-radius: 50%;
+  }
+  
+  audio::-webkit-media-controls-play-button:hover {
+    background-color: #d6b1e0af;
+  }

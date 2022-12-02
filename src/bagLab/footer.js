@@ -1,7 +1,9 @@
 import React from "react";
-import "./footer.css";
+import "./footer.css"; //importing styles
 
+//creating a footerpage
 const FooterPage = () => {
+  //returning the footer
   return (
     <div className="footer">
       <div className="footerTop">
@@ -47,4 +49,5 @@ const FooterPage = () => {
   );
 };
 
+// exporting the footerpage
 export default FooterPage;
