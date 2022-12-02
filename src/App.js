@@ -8,7 +8,6 @@ import FooterPage from "./bagLab/footer";
 import Comments from "./comments/Comments";
 import HeroSection from "./hero/hero";
 import ColorAnimation from "./hero/slideshow";
-import BoopButton from "./sound/playSound";
 
 class App extends React.Component {
   render() {

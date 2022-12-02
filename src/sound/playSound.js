@@ -5,6 +5,7 @@ import "./playSound.css"; //importing styles
 //creating BoopButton function
 const BoopButton = () => {
   const [play] = useSound(musicSound); //getting the music.mp3
+  console.log(play);
   //return button that plays the song
   return (
     <div>
@@ -22,5 +23,5 @@ const BoopButton = () => {
   );
 };
 
-//exporting the Music 
+//exporting the Music
 export default BoopButton;
